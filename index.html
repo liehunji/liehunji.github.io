@@ -1,0 +1,178 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九尾搜索_原谷粉搜搜</title>
+<meta name="keywords" content="九尾搜索,谷粉搜搜">
+<meta name="description" content="九尾搜索：由谷粉搜搜团队开发，主要提供网页、学术文献、图片搜索，致力于打造一个有用，干净的搜索引擎。" />
+<meta http-equiv="Cache-Control" content="no-transform " /> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/static/favicon.ico?v=1" type="image/x-icon" />
+<link rel="shortcut icon" href="/static/favicon.ico?v=1" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap-combined.min.css">
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap-ie6.min.css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="static/css/ie.css">
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="static/css/index.css?v=0.5"/>
+<link rel="search" type="application/opensearchdescription+xml" href="//www.jwss.com/opensearch.xml" title="jwss" />
+
+<script src="/js/base.js?v=0.2"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="static/js/bootstrap-ie.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="static/js/ie9.js"></script>
+<![endif]-->
+
+<script src="/static/js/iui.js?v=0.3"></script>
+<script>
+$(document).ready(function(){
+                $("#setse-btn").tooltip({'placement':'bottom'});
+});
+</script>
+
+<script language="javascript">
+if(top.location!==self.location){
+     top.location.href=self.location.href;
+}
+</script>
+<style> 
+#adleft{ float:left;width:49%;} 
+#adright{ float:left;width:49%;} 
+#sq{display:none;position:absolute;left:50%;margin-left:-343px;top:345px;width:348px;background:#fff;border:1px solid #a2bff0;border-right-color:#558be3;border-bottom-color:#558be3;z-index:2}
+#sq td{line-height:19px;padding:2px 6px;font-size:14px;white-space:nowrap}
+@media all and (max-width: 800px) {
+#adleft{display: none;}
+#adright{ width:100%;} 
+#link{display: none;} 
+}
+</style> 
+</head>
+
+<body onload=$("#lst-ib").focus()>
+<div>
+          <div class="logo-container">
+                 <center>
+          
+          <div id="logo-gf">
+               <div id="logo-entity">
+                    <h1>
+                         <a href="/"><img id="logo-img" src="/image/logo.png" width="400px" height="200px"alt="九尾搜索_原谷粉搜搜" /></a>
+                    </h1>
+               </div>
+          </div>
+          
+          <div style="margin-left:0px;">
+               <ul id="middle-nav" class="nav nav-pills-index inline" style="padding-bottom:5px;">
+                    <li class="
+active
+">
+                    <a href="#" style="color:white;font-weight:bold;background-color:sandybrown;" title="九尾搜索_原谷粉搜搜">网页</a>
+                    </li>
+                    <li class="">
+                    <a href="http://i.xsou.co/imghp?hl=zh-CN" style="color:cornflowerblue;font-weight:bold;text-decoration:none;" title="九尾搜索_原谷粉搜搜图片搜索">图片</a>
+                    </li>
+                    <li class="">
+                    <a href="https://g.xsou.co/scholar" style="color:cornflowerblue;font-weight:bold;text-decoration:none;" title="九尾搜索_原谷粉搜搜学术搜索">学术</a>
+                    </li>
+                    <li class="">
+                    <a href="http://translate.google.cn/" style="color:cornflowerblue;font-weight:bold;text-decoration:none;">翻译</a>
+                    </li>
+               </ul>
+          </div>
+          <div>
+               
+     <form action="/action.html" name="form">
+          <div class="input-append">
+               <input class="input-xxxlarge" value="" style="font-size:17px;height:30px;max-width:605px;" type="search" name="q"  id=r onmouseover=focus() onfocus=value=value onkeydown="m=event.keyCode;clearTimeout(setTimeout('mh()',0)-1)" onblur=$('sq').style.display='none' autocomplete=off>
+               <input type="submit" class="add-on btn-fl hidden-phone" style="font-size:17px;height:40px;min-height:40px;padding-left:20px;padding-right:20px;" value="搜索" id=sm name=sa  onClick="return testContent('test')"/>
+               <input type="submit" class="add-on btn-fl hidden-desktop hidden-tablet" style="font-size:17px;height:40px;min-height:40px;z-index:1;" value="搜索" id=sm name=sa  onClick="return testContent('test')"/>
+          </div>
+     </form>
+
+     <div id=sq></div>
+<script>function $(i){return document.getElementById(i)}var f=$('r'),h=$('sq'),l=m=0,gd={},gw={},gx=$('jz'),sg={};f.select();function z(){window.open('http://i.xsou.co/search?q='+escape(f.value),'_self')};
+gd=function(c){var tl=c[1].length,ih='';if(!tl){h.style.display='none';return}if(tl>9)tl=9;for(var j=0;j<tl;++j){try{ih+="<tr style=cursor:default onmouseover=style.background='#D4E2FF' onmousedown=\"f.value='"+c[1][j][0]+"';z()\" onmouseout=style.background='#fff'><td>"+c[1][j][0]+"</td></tr>"}catch(err){}}h.innerHTML="<table width=100% cellpadding=0 cellspacing=0>"+ih+"</table>";h.style.display="block"};function mh(){if(m==13)return;if(!f.value){h.style.display='none';return}if(m==38||m==40){l=h.firstChild.rows.length;m==38?h._i==-1?h._i=l-1:h._i--:h._i++;for(var i=0;i<l;i++)h.firstChild.rows[i].style.background="#fff";if(h._i>=0&&h._i<l)with(h.firstChild.rows[h._i]){style.background="#D4E2FF";f.value=cells[0].innerHTML}else{f.value=h._r;h._i=-1}}else{h._i=-1;h._r=f.value;if(gx)gx.parentNode.removeChild(gx);sg=document.createElement('script');sg.charset='utf-8';sg.src='http://google.cn/complete/search?callback=gd&client=serp&hl=zh-CN&js=true&q='+encodeURIComponent(f.value);document.body.appendChild(sg);gx=$('gz')}}function mn(){$('sq').style.display='none'}function md(){var B=$("vl");var A=$("mi");if(B.style.display!="block"){B.style.display="block"}else{B.style.display="none"}return false};function s(o,p){if(f.value)o.href=p+'.htm#'+escape(f.value)}var qu=location.hash.replace('#','');if(qu)f.value=unescape(qu);var bw=1;window.onload=function(){setTimeout("f.focus()",1)};function ke(){return true}window.onerror=ke</script>
+
+     <div id="link">
+        <a href="" target=_blank style="color:blue;text-decoration:underline;" title="九尾搜索">九尾搜索</a>
+        <a href="http://qu.liu.ba/" target=_blank style="color:blue;text-decoration:underline;" title="趣六吧">趣六吧</a>
+        <a href="http://shi.liu.ba/" target=_blank style="color:blue;text-decoration:underline;" title="石榴吧">石榴吧</a>
+        <a href="http://ma.liu.ba/" target=_blank style="color:blue;text-decoration:underline;" title="麻溜吧">麻溜吧</a>
+        <a href="http://tv.atlps.com/" target=_blank style="color:blue;text-decoration:underline;" title="电影资源站">电影资源站</a>
+        <a href="http://tv.atlps.com/zhibo.html" target=_blank style="color:blue;text-decoration:underline;" title="电影资源站">网络电视直播</a>
+        <a href="http://daomubiji.biqulu.com/" target=_blank style="color:blue;text-decoration:underline;" title="盗墓笔记">盗墓笔记</a>
+        <a href="http://guichuideng.biqulu.com/" target=_blank style="color:blue;text-decoration:underline;" title="鬼吹灯">鬼吹灯</a>
+        <a href="http://dazhuzai.biqulu.com/" target=_blank style="color:blue;text-decoration:underline;" title="大主宰">大主宰</a>
+        <a href="http://wanmeishijie.biqulu.com/" target=_blank style="color:blue;text-decoration:underline;" title="完美世界">完美世界</a>
+<br/><br/>
+</div>
+<div id="adleft">
+        <center>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Auto -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5750337402996396"
+     data-ad-slot="9435999462"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</div> 
+   <div id="adright">
+    <center>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Auto -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5750337402996396"
+     data-ad-slot="9435999462"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+          </div>    
+                 </center>
+          </div>
+
+</div>
+
+
+
+
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255418960'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1255418960' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-53730822-12']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+               ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+          </script>
+</div>
+<div class="duilian">
+<!--广告代码-->
+
+<!--广告代码-->
+</div>
+</body>
+
+</html>

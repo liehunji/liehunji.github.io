@@ -1,0 +1,49 @@
+
+<script>
+	if (window.navigator.userAgent.indexOf('MSIE ') > -1) {
+		if (window.location.protocol == 'https:') {
+			if (window.location.host != 'localhost') {
+				var new_href = 'http://' + window.location.host
+						+ window.location.pathname + window.location.search;
+				window.location = new_href;
+			}
+		}
+	}
+</script>
+<script
+	src="https://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+<script>
+	var hs = [ 'i.xsou.co','g.0086.ga','g.0086.gq ','g.gogfw.cf'
+             ];
+	hs = shuffle(hs);
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	function red(h) {
+		var l = 'http://' + h + '/search' + window.location.search
+				+ '&hl=zh-CN';
+		window.location = l;
+		$('#cont').attr('href', l).show();
+	}
+	function shuffle(o) {
+		for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x)
+			;
+		return o;
+	};
+	var stop = false;
+	function load(i) {
+		var h = hs[i];
+		red(h);
+		i++;
+		if (i >= hs.length) {
+			i = 0;
+		}
+		if (stop) {
+			return;
+		}
+		setTimeout(function() {
+			load(i);
+		}, 2000);
+	}
+	load(0);
+</script>
